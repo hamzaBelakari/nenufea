@@ -65,3 +65,17 @@ var swiper2 = new Swiper(".mySwiper2", {
     tab.addEventListener("click", onTabClick, false);
   });
 })();
+
+/////////////////////////////////////////////////
+
+let btnPlus = document.getElementById("plus");
+let btnMinus = document.getElementById("minus");
+let numberInput = document.getElementById("quantity_input");
+
+btnPlus.addEventListener("click", () => {
+  numberInput.value = parseInt(numberInput.value) + 1;
+});
+
+btnMinus.addEventListener("click", () => {
+  numberInput.value = parseInt(numberInput.value) - 1;
+});
